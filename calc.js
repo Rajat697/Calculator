@@ -1,9 +1,9 @@
-let screen = document.getElementById('screen');
-buttons = document.querySelectorAll('button');
+let screen = document.getElementById('screen');   //getting the input area
+buttons = document.querySelectorAll('button');    // getting the buttons
 let screenValue ='';
 for(item of buttons){
-    item.addEventListener('click' , (e)=>{
-        buttonText = e.target.innerText;
+    item.addEventListener('click' , (f)=>{
+        buttonText = f.target.innerText;    // will give you the text  inside of that particulat button
         
         // For clearing the input area
 
