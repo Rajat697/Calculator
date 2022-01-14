@@ -7,7 +7,7 @@ let screenValue ='';     // value of input area
 
 for(item of buttons){
     item.addEventListener('click' , (f)=>{
-        buttonText = f.target.innerText;    // will give you the text  inside of that particulat button
+        buttonText = f.target.innerText;    // will give you the text  inside of that particular button
 
         if(buttonText == 'X'){
             buttonText = '*';
@@ -24,7 +24,7 @@ for(item of buttons){
             //for clearing a single input
             
         }else if (buttonText == 'C') {
-            screenValue = screen.value.substr(0, screen.value.length-1)     // returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
+            screenValue = screen.value.substr(0, screen.value.length-1)     //.substr() = returns a portion of the string, starting at the specified index 
             screen.value = screenValue;
         }
         
